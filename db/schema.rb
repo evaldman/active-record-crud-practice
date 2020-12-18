@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_12_18_154135) do
 
-  create_table "persons", force: :cascade do |t|
+  create_table "people", force: :cascade do |t|
     t.string "name"
     t.boolean "likes_plants?"
     t.string "free_time"
