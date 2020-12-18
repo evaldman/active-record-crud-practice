@@ -10,6 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_12_18_154135) do
+
+  create_table "persons", force: :cascade do |t|
+    t.string "name"
+    t.boolean "likes_plants?"
+    t.string "free_time"
+    t.integer "age"
+  end
+
+  create_table "plants", force: :cascade do |t|
+    t.string "name"
+    t.date "bought"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "color"
+  end
 
 end
